@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Unity WebGL Player | MIAVI_TextGame</title>
+  </head>
+  <body style="text-align: center">
+    <canvas id="unity-canvas" style="width: 1920px; height: 1080px; background: #828080"></canvas>
+    <script src="Build/MIAVI_WebGL.loader.js"></script>
+    <script>
+      createUnityInstance(document.querySelector("#unity-canvas"), {
+        dataUrl: "Build/MIAVI_WebGL.data.br",
+        frameworkUrl: "Build/MIAVI_WebGL.framework.js.br",
+        codeUrl: "Build/MIAVI_WebGL.wasm.br",
+        streamingAssetsUrl: "StreamingAssets",
+        companyName: "MIAVI",
+        productName: "MIAVI_TextGame",
+        productVersion: "1.0",
+      });
+    </script>
+  </body>
+</html>
